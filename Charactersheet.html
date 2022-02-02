@@ -1,190 +1,101 @@
-<style>
-* {
-  box-sizing: border-box;
-
-}    
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 50%;
-}
-.black-Box {
-    color: white;
-    background-color: black;
-} 
-.mb-5 {
-    margin-bottom: 5px;
-}
-.pb-5{
-    padding-bottom: 5px;
-}
-.bold {
-    font-weight: bold;
-}
-</style>
-<div class="row">
-    <div class="column">
-        <div class="black-Box">
-            <div class="row">
-                <div class="column">
-                    <label for="PlayersName">Players Name</label>
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Players_Name" id="PlayersName">
-                </div>
-                <div class="column">
-                    <label for="CharacterName">Character Name</label>   
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Character_Name" id="CharacterName">
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="column">
-                    <label for="Profession">Profession</label>
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Profession" id="Profession">
-                </div>
-                <div class="column">
-                    <label for="Race">Race</label>   
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Race" id="Race">
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="column">
-                    <label for="Realm">Realm</label>
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Realm" id="Realm">
-                </div>
-                <div class="column">
-                    <label for="Culture">Culture</label>   
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Culture" id="Culture">
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="column">
-                    <label for="XPNextLevel">XPNextLevel</label>
-                </div>
-                <div class="column">
-                    <input type="number" name="attr_XP_Next_Level" id="XPNextLevel">
-                </div>
-                <div class="column">
-                    <label for="Level">Level</label>   
-                </div>
-                <div class="column">
-                    <input type="number" name="attr_Level" id="Level">
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="column">
-                    <label for="Height">Height</label>
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Height" id="Height">
-                </div>
-                <div class="column">
-                    <label for="Age">Age/Max</label>   
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Age/Max" id="Age">
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="column">
-                    <label for="BMR">BMR</label>
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_BMR" id="BMR">
-                </div>
-                <div class="column">
-                    <label for="Eyes">Eyes/Hair</label>   
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Eyes/Hair" id="Eyes">
-                </div>
-            </div>
-        </div>
+<html>
     
-        <div class="black-Box">
-            <div class="row">
-                <div class="column">
-                    <label for="RecoveryMulti">Recovery Multi.</label>
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Recovery_Mutli." id="RecoveryMulti">
-                </div>
-                <div class="column">
-                    <label for="Sex">Sex</label>   
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Sex" id="Sex">
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="column">
-                    <label for="FatePoints">Fate Points</label>
-                </div>
-                <div class="column">
-                    <input type="number" name="attr_Fate_Points" id="FatePoints">
-                </div>
-                <div class="column">
-                    <label for="WeightAllowance">WeightAllowance</label>   
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_WeightAllowance" id="WeightAllowance">
-                </div>
-            </div>
-        
-            <div class="row mb-5">
-                <div class="column">
-                    <label for="FollowerGrace">Follower/Grace</label>
-                </div>
-                <div class="column">
-                    <input type="text" name="attr_Follower_Grace" id="FollowerGrace">
-                </div>
-                <div class="column">
-                    <label for="Initiative">Initiative</label>   
-                </div>
-                <div class="column">
-                    <input type="number" name="attr_Initiative" id="Initiative">
-                </div>
-            </div>
-        </div>
+    <body>
+        <form>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,400;1,200&display=swap" rel="stylesheet"> 
+            <link rel="stylesheet" href="style.css">
+            <div class="sheet-grid-container">
+                <table class= "sheet-stats-table" id="Stats">
+                    <tr>
+                        <th>Stat</th>
+                        <th>Curr</th>
+                        <th>Max</th>
+                        <th>Bonus</th>
+                    </tr>
+                    <tr>
+                        <td>Ag</td>
+                        <td><input type="text" id="currAg" name="attr_Ag" required></td> 
+                        <td><input type="text" id="maxAg" name="attr_Ag_max" required></td>
+                        <td><input type="text" id="AgBonus" name="attr_Ag_Bonus" required></td> 
+                    </tr>
+                    <tr>
+                        <td>Co</td>
+                        <td><input type="text" id="currCo" name="attr_Co" required></td> 
+                        <td><input type="text" id="maxCo" name="attr_Co_max" required></td>
+                        <td><input type="text" id="CoBonus" name="attr_Co_Bonus" required></td> 
+                    </tr>
+                    <tr>
+                        <td>Em</td>
+                        <td><input type="text" id="currEm" name="attr_Em" required></td> 
+                        <td><input type="text" id="maxEm" name="attr_Em_max" required></td>
+                        <td><input type="text" id="EmBonus" name="attr_Em_Bonus" required></td> 
+                    </tr>
+                    <tr>
+                        <td>In</td>
+                        <td><input type="text" id="currIn" name="attr_In" required></td> 
+                        <td><input type="text" id="maxIn" name="attr_In_max" required></td>
+                        <td><input type="text" id="InBonus" name="attr_In_Bonus" required></td> 
+                    </tr>
+                    <tr>
+                        <td>Me</td>
+                        <td><input type="text" id="currMe" name="attr_Me" required></td> 
+                        <td><input type="text" id="maxMe" name="attr_Me_max" required></td>
+                        <td><input type="text" id="MeBonus" name="attr_Me_Bonus" required></td> 
+                    </tr>
+                    <tr>
+                        <td>Pr</td>
+                        <td><input type="text" id="currPr" name="attr_Pr" required></td> 
+                        <td><input type="text" id="maxPr" name="attr_Pr_max" required></td>
+                        <td><input type="text" id="PrBonus" name="attr_Pr_Bonus" required></td> 
+                    </tr>
+                    <tr>
+                        <td>Qu</td>
+                        <td><input type="text" id="currQu" name="attr_Qu" required></td> 
+                        <td><input type="text" id="maxQu" name="attr_Qu_max" required></td>
+                        <td><input type="text" id="QuBonus" name="attr_Qu_Bonus" required></td> 
+                    </tr>
+                    <tr>
+                        <td>Re</td>
+                        <td><input type="text" id="currRe" name="attr_Re" required></td> 
+                        <td><input type="text" id="maxRe" name="attr_Re_max" required></td>
+                        <td><input type="text" id="ReBonus" name="attr_Re_Bonus" required></td> 
+                    </tr>
+                    <tr>
+                        <td>SD</td>
+                        <td><input type="text" id="currSD" name="attr_SD" required></td> 
+                        <td><input type="text" id="maxSD" name="attr_SD_max" required></td>
+                        <td><input type="text" id="SDBonus" name="attr_SD_Bonus" required></td> 
+                    </tr>
+                    <tr>
+                        <td>St</td>
+                        <td><input type="text" id="currSt" name="attr_St" required></td> 
+                        <td><input type="text" id="maxSt" name="attr_St_max" required></td>
+                        <td><input type="text" id="StBonus" name="attr_St_Bonus" required></td> 
+                    </tr>
+                    
+                </table>
+                <table id="Skills">
 
-        <div class="row black-Box">
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column">
-                <h4 class="bold">Stat</h4>
-            </div>
-            <div class="column">
-                <h4 class="bold">Stat <br/> Bonus</h4>   
-            </div>
-            <div class="column">
-                <h4 class="bold">Race <br/> Bonus</h4>
-            </div>
-            <div class="column">
-                <h4 class="bold">Total <br/> Bonus</h4>
-            </div>
-        </div>
-    </div>
+                </table>
+                <table id="Languages">
 
-    <div class="column">
-        <!-- Image here -->
-    </div>
-</div>
+                </table>
+                <table id="Items">
+
+                </table>
+                <table id="Resistances">
+
+                </table>
+                <div id="Notes">
+
+                </div>
+            </div>
+        </form>
+    </body>
+    
+
+</html>
+
 
