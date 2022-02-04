@@ -7,78 +7,155 @@
             <link href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,400;1,200&display=swap" rel="stylesheet"> 
             <link rel="stylesheet" href="style.css">
             <div class="sheet-grid-container">
-                <table class= "sheet-stats-table" id="Stats">
-                    <tr>
-                        <th>Stat</th>
-                        <th>Curr</th>
-                        <th>Max</th>
-                        <th>Bonus</th>
-                    </tr>
-                    <tr>
-                        <td>Ag</td>
-                        <td><input type="text" id="currAg" name="attr_Ag" required></td> 
-                        <td><input type="text" id="maxAg" name="attr_Ag_max" required></td>
-                        <td><input type="text" id="AgBonus" name="attr_Ag_Bonus" required></td> 
-                    </tr>
-                    <tr>
-                        <td>Co</td>
-                        <td><input type="text" id="currCo" name="attr_Co" required></td> 
-                        <td><input type="text" id="maxCo" name="attr_Co_max" required></td>
-                        <td><input type="text" id="CoBonus" name="attr_Co_Bonus" required></td> 
-                    </tr>
-                    <tr>
-                        <td>Em</td>
-                        <td><input type="text" id="currEm" name="attr_Em" required></td> 
-                        <td><input type="text" id="maxEm" name="attr_Em_max" required></td>
-                        <td><input type="text" id="EmBonus" name="attr_Em_Bonus" required></td> 
-                    </tr>
-                    <tr>
-                        <td>In</td>
-                        <td><input type="text" id="currIn" name="attr_In" required></td> 
-                        <td><input type="text" id="maxIn" name="attr_In_max" required></td>
-                        <td><input type="text" id="InBonus" name="attr_In_Bonus" required></td> 
-                    </tr>
-                    <tr>
-                        <td>Me</td>
-                        <td><input type="text" id="currMe" name="attr_Me" required></td> 
-                        <td><input type="text" id="maxMe" name="attr_Me_max" required></td>
-                        <td><input type="text" id="MeBonus" name="attr_Me_Bonus" required></td> 
-                    </tr>
-                    <tr>
-                        <td>Pr</td>
-                        <td><input type="text" id="currPr" name="attr_Pr" required></td> 
-                        <td><input type="text" id="maxPr" name="attr_Pr_max" required></td>
-                        <td><input type="text" id="PrBonus" name="attr_Pr_Bonus" required></td> 
-                    </tr>
-                    <tr>
-                        <td>Qu</td>
-                        <td><input type="text" id="currQu" name="attr_Qu" required></td> 
-                        <td><input type="text" id="maxQu" name="attr_Qu_max" required></td>
-                        <td><input type="text" id="QuBonus" name="attr_Qu_Bonus" required></td> 
-                    </tr>
-                    <tr>
-                        <td>Re</td>
-                        <td><input type="text" id="currRe" name="attr_Re" required></td> 
-                        <td><input type="text" id="maxRe" name="attr_Re_max" required></td>
-                        <td><input type="text" id="ReBonus" name="attr_Re_Bonus" required></td> 
-                    </tr>
-                    <tr>
-                        <td>SD</td>
-                        <td><input type="text" id="currSD" name="attr_SD" required></td> 
-                        <td><input type="text" id="maxSD" name="attr_SD_max" required></td>
-                        <td><input type="text" id="SDBonus" name="attr_SD_Bonus" required></td> 
-                    </tr>
-                    <tr>
-                        <td>St</td>
-                        <td><input type="text" id="currSt" name="attr_St" required></td> 
-                        <td><input type="text" id="maxSt" name="attr_St_max" required></td>
-                        <td><input type="text" id="StBonus" name="attr_St_Bonus" required></td> 
-                    </tr>
-                    
-                </table>
-                <table id="Skills">
+                <div class="sheet-stats-container">
+                    <h4>Stats</h4>
+                    <table class= "sheet-stats-table" id="Stats">
+                        <tr>
+                            <th>Stat</th>
+                            <th>Curr</th>
+                            <th>Max</th>
+                            <th>Bonus</th>
+                        </tr>
+                        <tr>
+                            <td>Ag</td>
+                            <td><input type="text" id="currAg" name="attr_Ag" required></td> 
+                            <td><input type="text" id="maxAg" name="attr_Ag_max" required></td>
+                            <td><input type="text" id="AgBonus" name="attr_Ag_Bonus" required></td> 
+                        </tr>
+                        <tr>
+                            <td>Co</td>
+                            <td><input type="text" id="currCo" name="attr_Co" required></td> 
+                            <td><input type="text" id="maxCo" name="attr_Co_max" required></td>
+                            <td><input type="text" id="CoBonus" name="attr_Co_Bonus" required></td> 
+                        </tr>
+                        <tr>
+                            <td>Em</td>
+                            <td><input type="text" id="currEm" name="attr_Em" required></td> 
+                            <td><input type="text" id="maxEm" name="attr_Em_max" required></td>
+                            <td><input type="text" id="EmBonus" name="attr_Em_Bonus" required></td> 
+                        </tr>
+                        <tr>
+                            <td>In</td>
+                            <td><input type="text" id="currIn" name="attr_In" required></td> 
+                            <td><input type="text" id="maxIn" name="attr_In_max" required></td>
+                            <td><input type="text" id="InBonus" name="attr_In_Bonus" required></td> 
+                        </tr>
+                        <tr>
+                            <td>Me</td>
+                            <td><input type="text" id="currMe" name="attr_Me" required></td> 
+                            <td><input type="text" id="maxMe" name="attr_Me_max" required></td>
+                            <td><input type="text" id="MeBonus" name="attr_Me_Bonus" required></td> 
+                        </tr>
+                        <tr>
+                            <td>Pr</td>
+                            <td><input type="text" id="currPr" name="attr_Pr" required></td> 
+                            <td><input type="text" id="maxPr" name="attr_Pr_max" required></td>
+                            <td><input type="text" id="PrBonus" name="attr_Pr_Bonus" required></td> 
+                        </tr>
+                        <tr>
+                            <td>Qu</td>
+                            <td><input type="text" id="currQu" name="attr_Qu" required></td> 
+                            <td><input type="text" id="maxQu" name="attr_Qu_max" required></td>
+                            <td><input type="text" id="QuBonus" name="attr_Qu_Bonus" required></td> 
+                        </tr>
+                        <tr>
+                            <td>Re</td>
+                            <td><input type="text" id="currRe" name="attr_Re" required></td> 
+                            <td><input type="text" id="maxRe" name="attr_Re_max" required></td>
+                            <td><input type="text" id="ReBonus" name="attr_Re_Bonus" required></td> 
+                        </tr>
+                        <tr>
+                            <td>SD</td>
+                            <td><input type="text" id="currSD" name="attr_SD" required></td> 
+                            <td><input type="text" id="maxSD" name="attr_SD_max" required></td>
+                            <td><input type="text" id="SDBonus" name="attr_SD_Bonus" required></td> 
+                        </tr>
+                        <tr>
+                            <td>St</td>
+                            <td><input type="text" id="currSt" name="attr_St" required></td> 
+                            <td><input type="text" id="maxSt" name="attr_St_max" required></td>
+                            <td><input type="text" id="StBonus" name="attr_St_Bonus" required></td> 
+                        </tr>
+                        
+                    </table>
+                </div>
 
-                </table>
+                <div class="sheet-skills-container">
+                    <table class= "sheet-skills-table" id="Skills">
+                        <h4>Favorite Skills</h4>
+                        <thead>
+                            <tr>
+                                <th>Skill</th>
+                                <th>Rank</th>
+                                <th>Bonus</th>
+                                <th>Note</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td skill-label="Skill"><input type="text" id="Skill1" name="attr_Skill1"></td>
+                                <td skill-label="Rank"><input type="text" id="Skill1Rank" name="attr_Skill1_Rank"></td>
+                                <td skill-label="Bonus"><input type="text" id="Skill1Bonus" name="attr_Skill1_Bonus"></td>  
+                                <td skill-label="Note"><textarea type="text" id="Skill1Note" name="attr_Skill1_Note"></textarea></td>  
+                            </tr>
+                            <tr>
+                                <td skill-label="Skill"><input type="text" id="Skill1" name="attr_Skill1"></td>
+                                <td skill-label="Rank"><input type="text" id="Skill1Rank" name="attr_Skill1_Rank"></td>
+                                <td skill-label="Bonus"><input type="text" id="Skill1Bonus" name="attr_Skill1_Bonus"></td>  
+                                <td skill-label="Note"><textarea type="text" id="Skill1Note" name="attr_Skill1_Note"></textarea></td>  
+                            </tr>
+                            <tr>
+                                <td skill-label="Skill"><input type="text" id="Skill1" name="attr_Skill1"></td>
+                                <td skill-label="Rank"><input type="text" id="Skill1Rank" name="attr_Skill1_Rank"></td>
+                                <td skill-label="Bonus"><input type="text" id="Skill1Bonus" name="attr_Skill1_Bonus"></td>  
+                                <td skill-label="Note"><textarea type="text" id="Skill1Note" name="attr_Skill1_Note"></textarea></td>  
+                            </tr>
+                            <tr>
+                                <td skill-label="Skill"><input type="text" id="Skill1" name="attr_Skill1"></td>
+                                <td skill-label="Rank"><input type="text" id="Skill1Rank" name="attr_Skill1_Rank"></td>
+                                <td skill-label="Bonus"><input type="text" id="Skill1Bonus" name="attr_Skill1_Bonus"></td>  
+                                <td skill-label="Note"><textarea type="text" id="Skill1Note" name="attr_Skill1_Note"></textarea></td>  
+                            </tr>
+                            <tr>
+                                <td skill-label="Skill"><input type="text" id="Skill1" name="attr_Skill1"></td>
+                                <td skill-label="Rank"><input type="text" id="Skill1Rank" name="attr_Skill1_Rank"></td>
+                                <td skill-label="Bonus"><input type="text" id="Skill1Bonus" name="attr_Skill1_Bonus"></td>  
+                                <td skill-label="Note"><textarea type="text" id="Skill1Note" name="attr_Skill1_Note"></textarea></td>  
+                            </tr>
+                            <tr>
+                                <td skill-label="Skill"><input type="text" id="Skill1" name="attr_Skill1"></td>
+                                <td skill-label="Rank"><input type="text" id="Skill1Rank" name="attr_Skill1_Rank"></td>
+                                <td skill-label="Bonus"><input type="text" id="Skill1Bonus" name="attr_Skill1_Bonus"></td>  
+                                <td skill-label="Note"><textarea type="text" id="Skill1Note" name="attr_Skill1_Note"></textarea></td>  
+                            </tr>
+                            <tr>
+                                <td skill-label="Skill"><input type="text" id="Skill1" name="attr_Skill1"></td>
+                                <td skill-label="Rank"><input type="text" id="Skill1Rank" name="attr_Skill1_Rank"></td>
+                                <td skill-label="Bonus"><input type="text" id="Skill1Bonus" name="attr_Skill1_Bonus"></td>  
+                                <td skill-label="Note"><textarea type="text" id="Skill1Note" name="attr_Skill1_Note"></textarea></td>  
+                            </tr>
+                            <tr>
+                                <td skill-label="Skill"><input type="text" id="Skill1" name="attr_Skill1"></td>
+                                <td skill-label="Rank"><input type="text" id="Skill1Rank" name="attr_Skill1_Rank"></td>
+                                <td skill-label="Bonus"><input type="text" id="Skill1Bonus" name="attr_Skill1_Bonus"></td>  
+                                <td skill-label="Note"><textarea type="text" id="Skill1Note" name="attr_Skill1_Note"></textarea></td>  
+                            </tr>
+                            <tr>
+                                <td skill-label="Skill"><input type="text" id="Skill1" name="attr_Skill1"></td>
+                                <td skill-label="Rank"><input type="text" id="Skill1Rank" name="attr_Skill1_Rank"></td>
+                                <td skill-label="Bonus"><input type="text" id="Skill1Bonus" name="attr_Skill1_Bonus"></td>  
+                                <td skill-label="Note"><textarea type="text" id="Skill1Note" name="attr_Skill1_Note"></textarea></td>  
+                            </tr>
+                            <tr>
+                                <td skill-label="Skill"><input type="text" id="Skill1" name="attr_Skill1"></td>
+                                <td skill-label="Rank"><input type="text" id="Skill1Rank" name="attr_Skill1_Rank"></td>
+                                <td skill-label="Bonus"><input type="text" id="Skill1Bonus" name="attr_Skill1_Bonus"></td>  
+                                <td skill-label="Note"><textarea type="text" id="Skill1Note" name="attr_Skill1_Note"></textarea></td>  
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <table id="Languages">
 
                 </table>

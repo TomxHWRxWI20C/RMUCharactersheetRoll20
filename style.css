@@ -3,23 +3,83 @@
     font-family: 'Poppins', sans-serif;
     background-color: #772f1a;
     background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+    margin: 0;
+    padding: 1em;
+    gap: 1em;
 }
-input{
-    border-width: 0 0 2px;
-    border-color: gold;
-    background: transparent;
-    outline: 0;
+
+.sheet-stats-container, .sheet-skills-container{
+    display: grid;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+/* General for all Table */
+.sheet-stats-table, .sheet-skills-table {
     text-align: center;
 }
 
-input:valid{
+.sheet-stats-table input, .sheet-skills-container input {
+    border-width: 0 0 2px;
+    border-color: black;
+    background: transparent;
+    outline: none;
+}
+
+/* Stats Table */
+.sheet-stats-table input{
+    width: 5ch;
+    text-align: center;
+}
+
+
+.sheet-stats-table input:valid{
     border: none;
 }
 
-.sheet-stats-table {
-    text-align: center;
+/* Skill Table */
+.sheet-skills-table input{
+    padding-left: 1em;
 }
 
-.sheet-stats-table input {
-    width: 5ch;
+.sheet-skills-table textarea{
+    outline: none;
+    resize: none;
+    border: none;
+    background-color: #fafafa;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+
+/* responsive */
+@media(max-width: 500px){
+
+    /* Skill Table */
+    .sheet-skills-table thead{
+        display: none;
+    }
+    .sheet-skills-table tbody, .sheet-skills-table tr, .sheet-skills-table td{
+        display:block;
+    }
+    .sheet-skills-table tr{
+        margin-bottom: 0.5em;
+    }
+    .sheet-skills-table td{
+        text-align: right;
+        padding-right: 2em;
+        position: relative;
+        margin-top: 0.25em;
+    }
+    .sheet-skills-table td::before{
+        content: attr(skill-label);
+        font-weight: bold;
+        padding-left: 2em;
+        position:absolute;
+        left: 0;
+
+    }
+}
+
